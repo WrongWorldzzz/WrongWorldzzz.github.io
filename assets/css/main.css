@@ -1,3 +1,12 @@
+/* 主背景黑色，字体黄色（全局唯一定义） */
+body, .main-content, .container {
+    background: #111 !important;
+    color: #fff600 !important;
+    font-family: 'Orbitron', 'Microsoft YaHei', 'Arial', sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
 /* 基础重置 */
 * {
     margin: 0;
