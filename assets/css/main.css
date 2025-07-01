@@ -21,18 +21,48 @@ body {
     padding: 0 40px;
 }
 
-/* 导航栏 */
+/* 导航栏和页脚黑色背景，字体黄色 */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #111 !important;
+    color: #fff600 !important;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #e5e5e5;
     z-index: 1000;
     padding: 18px 0;
     box-shadow: none;
+}
+
+.navbar a, .navbar .nav-link {
+    color: #fff600 !important;
+}
+
+.navbar a:hover, .navbar .nav-link:hover {
+    color: #111 !important;
+    background: #fff600 !important;
+}
+
+.footer {
+    background: #111 !important;
+    color: #fff600 !important;
+    padding: 40px 0;
+    margin-top: 80px;
+    border-top: 4px solid #fff600;
+}
+
+.footer-links a {
+    color: #fff600 !important;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #111 !important;
+    background: #fff600 !important;
 }
 
 .nav-container {
@@ -44,7 +74,7 @@ body {
 .nav-logo a {
     font-size: 20px;
     font-weight: 700;
-    color: #1d1d1f;
+    color: #fff600 !important;
     text-decoration: none;
     letter-spacing: 2px;
 }
@@ -56,7 +86,7 @@ body {
 }
 
 .nav-link {
-    color: #1d1d1f;
+    color: #fff600 !important;
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -65,7 +95,8 @@ body {
 }
 
 .nav-link:hover {
-    color: #0071e3;
+    color: #111 !important;
+    background: #fff600 !important;
 }
 
 /* 主要内容区域 */
@@ -337,7 +368,7 @@ body {
 
 /* 页脚 */
 .footer {
-    background: #111;
+    background: #111 !important;
     color: #fff600 !important;
     padding: 40px 0;
     margin-top: 80px;
@@ -369,6 +400,7 @@ body {
 
 .footer-links a:hover {
     color: #111 !important;
+    background: #fff600 !important;
 }
 
 /* 通用样式 */
@@ -1352,4 +1384,21 @@ body {
     0% { box-shadow: 0 0 8px #fff600, 0 0 24px #00fff7; }
     50% { box-shadow: 0 0 32px #00fff7, 0 0 48px #fff600; }
     100% { box-shadow: 0 0 8px #fff600, 0 0 24px #00fff7; }
+}
+
+/* 全局背景和字体色统一设置 */
+body, .main-content, .navbar, .footer, .hero, .section-header, .work-item, .portfolio-item, .modal, .contact-form-section, .form-container, .faq-section, .about-intro, .about-content, .experience, .education, .philosophy, .skills, .project-gallery, .project-info, .project-meta, .project-description, .contact-info, .contact-grid, .contact-item, .portfolio-grid, .portfolio-items, .portfolio-image, .portfolio-overlay, .portfolio-info, .portfolio-link, .portfolio-meta, .page-header, .container {
+    background: #fff600 !important;
+    color: #111 !important;
+}
+
+/* 链接、按钮等交互元素字体色也统一为黑色 */
+a, a:visited, .nav-link, .btn-primary, .btn-secondary, .work-link, .portfolio-link, .footer-links a, .filter-btn, .submit-btn, .social-link {
+    color: #111 !important;
+}
+
+/* 悬停时的反色效果（可选） */
+a:hover, .nav-link:hover, .btn-primary:hover, .btn-secondary:hover, .work-link:hover, .portfolio-link:hover, .footer-links a:hover, .filter-btn:hover, .submit-btn:hover, .social-link:hover {
+    background: #111 !important;
+    color: #fff600 !important;
 } 
