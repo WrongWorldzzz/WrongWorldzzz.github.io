@@ -1,0 +1,2 @@
+# WrongWorldzzz.github.io
+web
