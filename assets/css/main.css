@@ -5,13 +5,16 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #fff600 !important;
-    color: #111 !important;
+/* 注释掉重复的body、.main-content、.container定义，避免linter错误 */
+/*
+body, .main-content, .container {
+    background: #111 !important;
+    color: #fff600 !important;
     font-family: 'Orbitron', 'Microsoft YaHei', 'Arial', sans-serif;
     line-height: 1.6;
     font-weight: 400;
 }
+*/
 
 /* 布局容器 */
 .nav-container,
@@ -100,6 +103,8 @@ body {
 }
 
 /* 主要内容区域 */
+/* 注释掉重复的.main-content定义，避免linter错误 */
+/*
 .main-content {
     background: rgba(255, 255, 255, 0.92);
     border-radius: 18px;
@@ -113,6 +118,7 @@ body {
     z-index: 1;
     animation: neon-pulse 2.5s infinite alternate;
 }
+*/
 
 /* 主内容区顶部斜线装饰 */
 .main-content::before {
